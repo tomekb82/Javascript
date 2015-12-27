@@ -1,0 +1,12 @@
+{
+  "addressBook" : [
+    {
+      "name": "tom",
+      "email": "tome@gazeta.pl"
+    },
+    {
+      "name": "john",
+      "email": "john@onet.pl"
+    }
+  ]
+}
