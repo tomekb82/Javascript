@@ -3,6 +3,10 @@
 /* wrap evertything in anonymous function to caontain the variables */
 var app = (function(){
 
+    if (!css) {
+        throw new Error('Css library not found');
+    }
+
     if (!ajax) {
         throw new Error('Ajax library not found');
     }

@@ -41,6 +41,7 @@ var addressBook = (function () {
 
                         // anything other than -1 means we found a match
                         if(isItFound !==- 1){
+
                             outputElement.innerHTML += '<p>' + obj.name + ', <a href="mailto: ' + obj.email + '">' + obj.email + '</a></p>';
                         } // end if
 
@@ -52,7 +53,7 @@ var addressBook = (function () {
         },
 
         getAllContacts: function(){
-            
+
             /* start the Ajax call */
             ajax.call("GET", dataUrl, outputElement, function(data){
 
@@ -72,10 +73,8 @@ var addressBook = (function () {
 
                         // look through the name value to see if it contains the searchterm string
                         var obj = addrBook[i];
-
+                        
                         outputElement.innerHTML += '<p>' + obj.name + ', <a href="mailto: ' + obj.email + '">' + obj.email + '</a></p>';
-
-                        console.log(outputElement);
                     } // end for loop
 
                 } // end count check
