@@ -73,7 +73,7 @@ var addressBook = (function () {
 
                         // look through the name value to see if it contains the searchterm string
                         var obj = addrBook[i];
-                        
+
                         outputElement.innerHTML += '<p>' + obj.name + ', <a href="mailto: ' + obj.email + '">' + obj.email + '</a></p>';
                     } // end for loop
 
