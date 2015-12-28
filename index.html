@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Address Book</title>
 
+    <!-- css -->
+    <link rel="stylesheet" href="css/audio-controls.css">
     <style>
         .active { background: red;}
         .hovering { background: blue;}
@@ -29,9 +31,18 @@
 
 <div id="output" aria-atomic="true" aria-live="polite" aria-relevant="additions removals"></div>
 
+<div id="controls">
+    <button id="play" type="button">Play</button>
+    <button id="stop" type="button">Stop</button>
+
+    <button id="pause" type="button">Pause</button>
+    <button id="record" type="button">Record</button>
+</div>
+
 <script src="js/library/ajax.js"></script>
 <script src="js/library/css.js"></script>
-<script src="js/library/addressBook.js"></script>
+<script src="js/addressBook.js"></script>
+<script src="js/audio-controls.js"></script>
 <script src="js/application.js"></script>
 
 </body>

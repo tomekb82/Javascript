@@ -1,0 +1,19 @@
+#controls {
+    padding: 20px;
+}
+
+.playing {
+    background: yellow;
+}
+
+.stopped {
+    background: green;
+}
+
+.pausing {
+    background: black;
+}
+
+.recording {
+    background: orange;
+}

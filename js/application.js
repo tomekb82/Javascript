@@ -26,6 +26,25 @@ var app = (function(){
     addressBook.init(searchField, outputElement, dataUrl);
     css.init(searchForm);
 
+
+    /* Function and closure pattern */
+    var element = document.getElementById("controls"),
+        action = controls(element);
+    // use the API
+    action.play;
+    action.stop;
+
+    /* Event-driven pattern */
+    var pauseButton = document.getElementById("pause"),
+        recordButton = document.getElementById("record");
+
+    // set up the pause event listener
+    pauseButton.addEventListener("click", pause, false);
+
+    // set up the record event listener
+    recordButton.addEventListener("click", record, false);
+
+
     // activate autocomplete on keyUp
     searchField.addEventListener("keyup", addressBook.search, false);
 
