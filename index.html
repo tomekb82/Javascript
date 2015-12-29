@@ -10,6 +10,15 @@
         .active { background: red;}
         .hovering { background: blue;}
         form > div { padding: 10px;}
+
+        #container {
+            overflow: hidden;
+        }
+        .module {
+            width:33%;
+            float: left;
+            background: pink;
+        }
     </style>
 </head>
 <body>
@@ -38,6 +47,51 @@
     <button id="pause" type="button">Pause</button>
     <button id="record" type="button">Record</button>
 </div>
+
+<!-- jquery examples -->
+<button type="button" id="dontClick">Don't click the button</button>
+<div id="container">
+    <div class="module">
+        <p>Hello module one!</p>
+    </div><!--/.module-->
+    <div class="module">
+        <p>Hello module two!</p>
+    </div><!--/.module-->
+    <div class="module">
+        <p>Hello module three!</p>
+    </div><!--/.module-->
+</div><!--/#container-->
+
+<div id="outputGetJSON" aria-atomic="true" aria-live="polite" aria-relevant="additions removals"></div>
+
+<div >
+<table id="tableEl">
+    <tr>
+        <td>1</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>2</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>4</td>
+    </tr>
+</table>
+</div>
+<!-- end jquery examples -->
+
+<!--js-->
+<script src="js/library/vendor/jquery.js"></script>
+<script src="js/library/jQueryAjax.js"></script>
+<script src="js/library/jQueryPlugin.js"></script>
+<script src="js/jQueryScript.js"></script>
+
 
 <script src="js/library/ajax.js"></script>
 <script src="js/library/css.js"></script>
