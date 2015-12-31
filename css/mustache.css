@@ -1,0 +1,18 @@
+
+.addresses li:first-of-type{
+    font-weight:bolder;
+    background-color:green !important;
+    list-style:none;
+    margin-left: 0px;
+}
+
+.addresses li {
+    padding: 10px;
+    margin-left: 20px;
+}
+.addresses li:nth-of-type(even){
+    background-color:#f3f3f3;
+}
+.addresses li:nth-of-type(odd){
+    background-color:#ddd;
+}

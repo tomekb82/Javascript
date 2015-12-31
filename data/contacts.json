@@ -7,6 +7,14 @@
     {
       "name": "john",
       "email": "john@onet.pl"
+    },
+    {
+      "name": "mark",
+      "email": "mark@onet.pl"
+    },
+    {
+      "name": "luke",
+      "email": "luke@onet.pl"
     }
   ]
 }
