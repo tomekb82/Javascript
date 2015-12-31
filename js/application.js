@@ -38,6 +38,18 @@ var app = (function(){
     var pauseButton = document.getElementById("pause"),
         recordButton = document.getElementById("record");
 
+
+
+    /* the JavaScript */
+    var modalWindow = document.getElementById("modal-window"),
+        closeButton = document.getElementById("closeModal");
+    /* when the close button is clicked apply the class */
+    closeButton.addEventListener("click", function(e){
+        modalWindow.setAttribute("class", "hide-and-move-up");
+    }, false);
+
+
+
     // set up the pause event listener
     pauseButton.addEventListener("click", pause, false);
 

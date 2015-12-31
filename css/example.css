@@ -1,0 +1,14 @@
+
+#modal-window {
+    height: 50px;
+    width:33%;
+    float: left;
+    background: red;
+}
+
+.hide-and-move-up {
+    opacity: 0;
+    position: absolute;
+    margin-top: -100%;
+    transition: all linear .5s; /* add vendor extensions */
+}
