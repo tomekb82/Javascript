@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+
+</head>
+<body>
+
+<form action="" method="get" id="search-form">
+    <div>
+        <label for="q">Search address book</label>
+        <input type="search" id="q" name="q" required placeholder="type a name" autocomplete="off">
+    </div>
+    <div class="button-group">
+        <button type="submit" id="search-btn">search</button>
+        <button type="button" id="get-all">get all contacts</button>
+    </div><!--/.button-group-->
+</form>
+<div id="output" aria-atomic="true" aria-live="polite"></div>
+<script type="text/x-mustache-tmpl" id="mustache-template">
+<ul>
+{{#addressBook}}
+<li><a href="mailto: {{email}} "> {{name}} </a></li>
+{{/addressBook}}
+</ul>
+
+</script>
+
+<!--js-->
+<script src=" js/library/vendor/jquery.js"></script>
+<script src=" js/library/vendor/mustache.min.js"></script>
+<script src=" js/mustacheScript.js "></script>
+</body>
+</html>
