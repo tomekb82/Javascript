@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Chapter 11</title>
+    <meta charset="utf-8">
+</head>
+<body>
+<header role="banner" >
+    <hgroup>
+        <h1>Site title</h1>
+        <h2>Site slogan</h2>
+    </hgroup>
+</header>
+<nav role="navigation" >
+    <ul>
+        <li><a href="index_html5.html">Home</a></li>
+        <li><a href="geo.html">Geolocation</a></li>
+        <li><a href="audio.html">Audio</a></li>
+    </ul>
+</nav>
+
+<div id="output"></div><!--/#output-->
+
+<section>
+    <div> Web worker </div>
+    <button type="button" id="start">start worker</button>
+    <button type="button" id="stop">stop worker</button>
+
+    <div id="timer"></div><!--/#timer-->
+    <div id="output2"></div><!--/#output2-->
+
+</section>
+<section>
+    <div> Audio player </div>
+    <article role="main" >
+        <audio id="player" controls preload="auto" autobuffer>
+            <source src="data/audio/demo.mp3">
+            <source src="data/audio/demo.ogg">
+        </audio>
+        <div id="controls">
+            <button type="button" id="play">play/pause</button>
+            <button type="button" id="vol-up">volume up</button>
+            <button type="button" id="vol-down">volume down</button>
+        </div>
+    </article>
+    <aside role="complementary" >
+        aside
+    </aside>
+</section>
+
+<section id="geo">
+    <div> Geolocation </div>
+    <article role="main" >
+
+    </article>
+    <aside role="complementary" ></aside>
+</section>
+
+
+<footer role="contentinfo" >
+    Copyright TB
+</footer>
+
+
+<!--js-->
+<script src="js/html5/geolocation.js"></script>
+<script src="js/html5/audio-video.js"></script>
+<script src="js/html5/historyAPI.js"></script>
+<script src="js/html5/webWorker.js"></script>
+<script src="js/html5/worker.js"></script>
+</body>
+</html>
